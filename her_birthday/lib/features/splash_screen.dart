@@ -52,7 +52,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
       Navigator.pushAndRemoveUntil(
         context,
         MaterialPageRoute(
-          builder: (_) => _setup != null ? const DashboardScreen() : const CrushScreen(),
+          builder: (_) => _setup != null ? const DashboardScreen() : const DashboardScreen(),
         ),
         (route) => false,
       );

@@ -9,7 +9,6 @@ import 'package:her_birthday/core/widgets/animation_widgets/rabit_animation.dart
 import 'package:her_birthday/features/auth/presentation/bloc/auth_bloc.dart';
 import 'package:her_birthday/features/auth/presentation/bloc/auth_event.dart';
 import 'package:her_birthday/features/auth/presentation/pages/forget_password.dart';
-import 'package:her_birthday/features/crush/crush.dart';
 import 'package:her_birthday/features/dashboard/dashbord.dart';
 import '../../../../core/app_validations/app_validations.dart';
 import '../../../../core/widgets/custom_text_form_field.dart';
@@ -63,7 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
                  else {
                   Navigator.pushAndRemoveUntil(
                     context,
-                    MaterialPageRoute(builder: (_) => const CrushScreen()),
+                    MaterialPageRoute(builder: (_) => const DashboardScreen()),
                     (route) => false,
                   );
                 }
